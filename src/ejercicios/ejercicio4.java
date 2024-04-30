@@ -20,30 +20,16 @@ public class ejercicio4 {
 		String sexo = scanner.next();
 		
 		
-		if(edad == 18 && nota== 5) {
-			if(sexo.equalsIgnoreCase("masculino"));
+		if(edad >= 18 && nota >= 5) {
+			if(sexo.equalsIgnoreCase("masculino")) {
 				System.out.println("posible");
-			}
-	
-				else if(edad == 18 && nota ==5) {
-				 if(sexo.equalsIgnoreCase("femenino"));
+			} else if(sexo.equalsIgnoreCase("femenino")) {
 				System.out.println("aceptada");
-				}
-				
-				else {
-					System.out.println("no aceptada");
-				}
+			} else {
+				System.out.println("no aceptada");
 			}
+		} else {
+			System.out.println("no aceptada");
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-
-	
-
-
+	}
+}
