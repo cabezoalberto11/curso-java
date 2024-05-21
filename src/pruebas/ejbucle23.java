@@ -11,11 +11,10 @@ public class ejbucle23 {
 		int numero = scanner.nextInt();
 		int sumaImpares = 0;
 		
-		for(int i=1; i<=numero; i++) {
-			if(i %2 != 0) {
-				sumaImpares += i;
+		for(int intentos = 1; intentos <= numero; intentos++) {
+			if(intentos %2 != 0) {
+				sumaImpares += intentos;
 			}
-			
 		}
 		
 		System.out.println("La suma de números impares entre 1 y " + numero + " = " + sumaImpares);

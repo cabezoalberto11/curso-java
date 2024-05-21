@@ -10,7 +10,7 @@ public class ejbucle22 {
 		Scanner Scanner = new Scanner(System.in);
 		
 		String clave = "Alberto123";
-		int intentos=3;
+		int intentos = 3;
 		
 		do {
 			System.out.println("Introduce tu contraseña");
@@ -19,15 +19,13 @@ public class ejbucle22 {
 			if(contraseña.equalsIgnoreCase(clave)) {
 				System.out.println("Contraseña correcta");
 				return;
-			}else {
+			} else {
 				intentos--;
-			}if( ! contraseña.equalsIgnoreCase(clave)) {
 				System.out.println("contraseña incorrecta, te quedan " + intentos + " intentos");
-			}else {
-				System.out.println("Contraseña correcta");
 			}
 				
-		}while( intentos >0);
+		} while( intentos > 0);
+		
 		System.out.println("Eres tonto o que te pasa");
 	}
 }
