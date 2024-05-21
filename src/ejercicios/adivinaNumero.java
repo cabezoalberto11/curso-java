@@ -1,7 +1,7 @@
 package ejercicios;
 import java.util.Scanner;
 public class adivinaNumero {
-
+ // BUCLE DO WHILE
 	public static void main(String[] args) {
 		
 		int aleatorio = (int)(Math.random()*100);
@@ -13,10 +13,10 @@ public class adivinaNumero {
 		
 		System.out.println("Introduce un numero, por favor");
 		
-		while (numero != aleatorio) {
-			
+		do {
+			intentos ++;
 			numero = scanner.nextInt();
-			
+			                                                        
 			if(aleatorio<numero) {
 				System.out.println("Mas bajo");
 			}
@@ -25,7 +25,7 @@ public class adivinaNumero {
 			}
 		
 
-		}
-		System.out.println("Correcto");
+	    }while (numero != aleatorio);
+		System.out.println("Correcto, lo has adivinado en " + intentos + " intentos");
 	}
 }
